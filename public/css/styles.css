@@ -1,0 +1,140 @@
+* {
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.main-header {
+    background-color:  #EAC926;
+    padding:20px
+}
+
+.logo-ml-header {
+    width:200px
+}
+
+.search_bar{
+    align-self: center
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+
+.hamburger-button {
+    background-color:#03264C;
+    color: #ffffff;
+    display:block;
+    max-width:50px;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    font-size: 18px;
+    margin:auto
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color:#222222;
+    display:inline-block;
+    padding: 5px 0;
+    font-size:17px
+}
+
+
+.main-navbar a {
+    text-decoration: none;
+    color:#222222;
+    display:inline-block;
+    padding: 5px 0;
+    font-size:17px
+}
+
+/* PRODUCTOS */
+.main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #ebebeb;
+}
+
+.productos {
+        display: block ;
+        font-size: 16 px ;
+        padding: 5 px ;
+        width: 30 px ;
+        height: 30 px ;
+        border: 1 px solid #39b54a ;
+        background-color: #FFF ;
+        border-radius: 50% ;
+        position: absolute ;
+        right: 20 px ;
+        top: 15px
+ }
+
+/* TABLET */
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        border: dotted 2px red;
+        display:flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width:350px;
+        text-align:right
+    }
+    .hamburger-button{
+        display:none
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+}
+/* FIN TABLET */
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    .main-header {
+        max-width: 1200px;
+        margin:auto
+    }
+    .main-header-top-bar {
+        align-items:center;
+    }
+    .main-navbar {
+        margin-top: 50px;
+       
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .copy-header {
+        max-width:none;  
+        font-size:18px;
+        font-weight: 400;  
+        margin:0 
+    }
+    .logo-ml-header {
+        width:250px
+    }
+}
